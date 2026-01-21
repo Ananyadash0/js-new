@@ -34,3 +34,29 @@ const myFunc = function(){
 
 console.log (typeof bigNumber)
 console.log (typeof outsideTemp)
+
+
+
+
+//******************************************************************** */
+
+// Stack (Primitive), Heap (Non-primitive)
+
+let myName = "Ananya Dash"
+let anotherName = myName       // copy of myName
+anotherName = "Sushree Ananya Dash"
+
+console.log(myName)          //  Ananya Dash
+console.log(anotherName)     //  Sushree Ananya Dash
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne      // Same reference, not copy
+
+userTwo.email = "ananya@google.com"
+
+console.log(userOne.email)  //ananya@google.com
+console.log(userTwo.email)  //ananya@google.com
